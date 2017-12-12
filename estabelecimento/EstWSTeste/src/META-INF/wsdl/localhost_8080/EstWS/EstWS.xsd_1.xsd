@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://ine5646/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ine5646/">
+
+<xs:element name="detalhes_local" type="tns:detalhes_local"/>
+
+<xs:element name="detalhes_localResponse" type="tns:detalhes_localResponse"/>
+
+<xs:element name="listar_locais" type="tns:listar_locais"/>
+
+<xs:element name="listar_locaisResponse" type="tns:listar_locaisResponse"/>
+
+<xs:element name="procurar_locais" type="tns:procurar_locais"/>
+
+<xs:element name="procurar_locaisResponse" type="tns:procurar_locaisResponse"/>
+
+<xs:element name="setar_comentario" type="tns:setar_comentario"/>
+
+<xs:element name="setar_comentarioResponse" type="tns:setar_comentarioResponse"/>
+
+<xs:element name="setar_nota" type="tns:setar_nota"/>
+
+<xs:element name="setar_notaResponse" type="tns:setar_notaResponse"/>
+
+<xs:element name="verifica_login" type="tns:verifica_login"/>
+
+<xs:element name="verifica_loginResponse" type="tns:verifica_loginResponse"/>
+
+<xs:complexType name="setar_nota">
+<xs:sequence>
+<xs:element name="local_id" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario_id" type="xs:string" minOccurs="0"/>
+<xs:element name="nota" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setar_notaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="procurar_locais">
+<xs:sequence>
+<xs:element name="nome" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="procurar_locaisResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setar_comentario">
+<xs:sequence>
+<xs:element name="local_id" type="xs:string" minOccurs="0"/>
+<xs:element name="usuario_id" type="xs:string" minOccurs="0"/>
+<xs:element name="comentario" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setar_comentarioResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifica_login">
+<xs:sequence>
+<xs:element name="login" type="xs:string" minOccurs="0"/>
+<xs:element name="senha" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="verifica_loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="listar_locais">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="listar_locaisResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="detalhes_local">
+<xs:sequence>
+<xs:element name="local_id" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="detalhes_localResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
